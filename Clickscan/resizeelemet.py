@@ -7,12 +7,12 @@ from selenium.webdriver import ActionChains, Keys
 driver=webdriver.Chrome()             # to Launch browse
 
 driver.maximize_window()
-driver.get("https://clickscan.terralogic.com/login")  
+driver.get("-------")  
 
 #print(driver.find_element(By.CSS_SELECTOR,"table[id='table1']").get_attribute("border"))
 driver.fullscreen_window()
-driver.find_element(By.ID,"username").send_keys("tds.admin")
-driver.find_element(By.ID,"password").send_keys("P@ssw0rd")
+driver.find_element(By.ID,"username").send_keys("******")
+driver.find_element(By.ID,"password").send_keys("******")
 time.sleep(1)
 driver.find_element(By.XPATH,"//button[text()='Log in']").click()
 time.sleep(1)
